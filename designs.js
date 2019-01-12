@@ -15,7 +15,7 @@ form.addEventListener('submit', function(event) {
 function makeGrid() {
     // Your code goes here!
     const pixelCanvas = document.querySelector('#pixelCanvas');
-
+    pixelCanvas.innerHTML = "";
     for (let i = 0; i < inputHeight.value; i++) {
         const tableRow = document.createElement(`tr`);
         for (let j = 0; j < inputWidth.value; j++) {
